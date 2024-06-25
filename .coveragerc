@@ -1,0 +1,24 @@
+[run]
+branch = True
+source =
+    allianceauth
+
+omit =
+    */migrations/*
+    */example/*
+    */project_template/*
+    */bin/*
+    */tests/*
+    */tests.py
+
+[report]
+exclude_lines =
+    if self.debug:
+    pragma: no cover
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    def __repr__
+    raise AssertionError
+    if TYPE_CHECKING:
+
+ignore_errors = True
